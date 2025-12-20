@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Computing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>عالم الحوسبة السحابية (Cloud Computing)</h1>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>ما هي الحوسبة السحابية؟</h2>
+            <p>هي توفير موارد تقنية المعلومات حسب الطلب عبر الإنترنت، مثل التخزين وقواعد البيانات والمعالجة.</p>
+        </section>
+
+        <div class="container">
+            <div class="card" onclick="changeColor(this)">
+                <h3>SaaS</h3>
+                <p>البرمجيات كخدمة (مثل Gmail)</p>
+            </div>
+            <div class="card" onclick="changeColor(this)">
+                <h3>PaaS</h3>
+                <p>المنصة كخدمة (مثل Google App Engine)</p>
+            </div>
+            <div class="card" onclick="changeColor(this)">
+                <h3>IaaS</h3>
+                <p>البنية التحتية كخدمة (مثل AWS)</p>
+            </div>
+        </div>
+
+        <section id="contact-form" style="margin-top: 40px; padding: 20px; background: #fff; border-radius: 10px;">
+            <h3>تواصل معنا </h3>
+            <form name="contact" method="POST" data-netlify="true">
+                <p>
+                    <label>الاسم: <br><input type="text" name="name" required style="width: 100%; padding: 8px; margin-top: 5px;"/></label>   
+                </p>
+                <p>
+                    <label>البريد الإلكتروني: <br><input type="email" name="email" required style="width: 100%; padding: 8px; margin-top: 5px;"/></label>
+                </p>
+                <p>
+                    <label>رسالتك: <br><textarea name="message" required style="width: 100%; padding: 8px; margin-top: 5px;"></textarea></label>
+                </p>
+                <p>
+                    <button type="submit" style="background-color: #1a73e8; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">إرسال عبر السحابة</button>
+                </p>
+            </form>
+        </section>
+
+        <button id="btn-alert" style="margin-top: 20px;">اضغط للمزيد من المعلومات</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

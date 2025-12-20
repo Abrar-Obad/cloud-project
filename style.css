@@ -1,0 +1,112 @@
+/* تنسيقات الصفحة العامة */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    text-align: center;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #007bff, #00d4ff);
+    color: white;
+    padding: 50px 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background-color: #e3f2fd;
+}
+
+/* --- تنسيق أنيق لنموذج التواصل --- */
+#contact-form {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    text-align: right; /* لمحاذاة النص العربي */
+}
+
+#contact-form h3 {
+    color: #007bff;
+    margin-bottom: 25px;
+    font-size: 24px;
+    text-align: center;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+#contact-form input, 
+#contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 2px solid #edf2f7;
+    border-radius: 10px;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box; /* لضمان عدم خروج المدخلات عن الحواف */
+}
+
+#contact-form input:focus, 
+#contact-form textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    background-color: #fcfdfe;
+}
+
+#contact-form button {
+    width: 100%;
+    background: linear-gradient(to right, #007bff, #00d4ff);
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    margin-bottom: 0; /* إلغاء الهامش السفلي هنا */
+}
+
+#contact-form button:hover {
+    opacity: 0.9;
+    transform: none; /* إلغاء تأثير الرفع الخاص بالأزرار العامة */
+}
+
+/* الزر العام القديم */
+#btn-alert {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 40px 0;
+}
